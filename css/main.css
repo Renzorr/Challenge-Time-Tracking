@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ol,
+li {
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  background: none;
+  font: inherit;
+  border: none;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(226deg, 43%, 10%);
+}
+
+.grid-section {
+  width: 100%;
+  max-width: 1143px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-block: 20px;
+}
+
+.o-card {
+  background: url(../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(15deg, 100%, 70%);
+}
+
+.b-card {
+  background: url(../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(195deg, 74%, 62%);
+}
+
+.r-card {
+  background: url(../images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(348deg, 100%, 68%);
+}
+
+.g-card {
+  background: url(../images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(145deg, 58%, 55%);
+}
+
+.p-card {
+  background: url(../images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(264deg, 64%, 52%);
+}
+
+.y-card {
+  background: url(../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(43deg, 84%, 65%);
+}
+
+.card {
+  border-radius: 1rem 1rem 1.25rem 1.25rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-content {
+  width: 100%;
+  height: 200px;
+  background-color: hsl(235deg, 46%, 20%);
+  border-radius: 15px;
+  padding: 30px;
+}
+.card-content:hover {
+  background-color: rgb(49, 56, 129);
+}
+.card-content .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 18px;
+}
+.card-content .header p {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 20px;
+}
+.card-content h2 {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 55px;
+  font-weight: 100;
+  padding-bottom: 8px;
+}
+.card-content p {
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.8;
+  font-weight: 100;
+}
+
+.profile {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  border-radius: 15px;
+  background-color: hsl(235deg, 46%, 20%);
+}
+.profile .profile-top {
+  background-color: hsl(246deg, 80%, 60%);
+  border-radius: 15px;
+  height: 350px;
+  padding: 45px 30px;
+  margin-bottom: 30px;
+}
+.profile .profile-top p {
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.6;
+  padding-bottom: 10px;
+}
+.profile .profile-top span {
+  font-size: 40px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 100;
+}
+.profile .profile-top img {
+  width: 45%;
+  border-radius: 50%;
+  border: 3px solid hsl(0deg, 0%, 100%);
+  margin-bottom: 30px;
+}
+.profile .profile-bottom {
+  padding-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+.profile button {
+  color: hsl(235deg, 45%, 61%);
+  cursor: pointer;
+}
+.profile button:focus {
+  color: hsl(0deg, 0%, 100%);
+}
+
+@media (max-width: 1110px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+  .profile .profile-top {
+    height: 200px;
+    padding-block: 20px;
+  }
+  .profile .profile-top span {
+    font-size: 30px;
+  }
+  .profile .profile-top p {
+    padding-bottom: 5px;
+  }
+  .profile .profile-top img {
+    width: 30%;
+    margin-bottom: 15px;
+  }
+  .profile .profile-bottom {
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .card {
+    padding-top: 35px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,6 @@
+@mixin bg-card($bg-img, $bg-color) {
+  background: $bg-img;
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: $bg-color;
+}

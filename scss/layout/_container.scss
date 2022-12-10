@@ -1,0 +1,40 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $very-dark-blue;
+}
+
+.grid-section {
+  width: 100%;
+  max-width: 1143px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding-block: 20px;
+}
+
+.o-card {
+  @include bg-card($bg-work, $soft-red);
+}
+
+.b-card {
+  @include bg-card($bg-play, $soft-blue);
+}
+
+.r-card {
+  @include bg-card($bg-study, $light-red);
+}
+
+.g-card {
+  @include bg-card($bg-exe, $lime-green);
+}
+
+.p-card {
+  @include bg-card($bg-social, $violet);
+}
+
+.y-card {
+  @include bg-card($bg-care, $soft-orange);
+}

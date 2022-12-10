@@ -1,0 +1,33 @@
+@media (max-width: 1110px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+  }
+
+  .profile {
+    .profile-top {
+      height: 200px;
+      padding-block: 20px;
+
+      span {
+        font-size: 30px;
+      }
+
+      p {
+        padding-bottom: 5px;
+      }
+
+      img {
+        width: 30%;
+        margin-bottom: 15px;
+      }
+    }
+    .profile-bottom {
+      flex-direction: row;
+      justify-content: center;
+      padding-bottom: 30px;
+    }
+  }
+  .card {
+    padding-top: 35px;
+  }
+}
