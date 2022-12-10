@@ -1,13 +1,18 @@
+// url
+const url = "../js/data.json";
+
+// buttons
 const btndaily = document.getElementById("day");
 const btnweekly = document.getElementById("week");
 const btnmonthly = document.getElementById("month");
 
+// text
 const title = document.querySelectorAll(".title");
 const actualTime = document.querySelectorAll(".actual-time");
 const previousTime = document.querySelectorAll(".previous-time");
 
 async function api() {
-  const response = await fetch("./data.json");
+  const response = await fetch(url);
   const data = await response.json();
   console.log(data);
 
