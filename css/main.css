@@ -59,48 +59,15 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding-block: 20px;
+  animation: pop 2s ease-in;
 }
-
-.o-card {
-  background: url(../images/icon-work.svg);
-  background-repeat: no-repeat;
-  background-position: right 1vw bottom 19vh;
-  background-color: hsl(15deg, 100%, 70%);
-}
-
-.b-card {
-  background: url(../images/icon-play.svg);
-  background-repeat: no-repeat;
-  background-position: right 1vw bottom 19vh;
-  background-color: hsl(195deg, 74%, 62%);
-}
-
-.r-card {
-  background: url(../images/icon-study.svg);
-  background-repeat: no-repeat;
-  background-position: right 1vw bottom 19vh;
-  background-color: hsl(348deg, 100%, 68%);
-}
-
-.g-card {
-  background: url(../images/icon-exercise.svg);
-  background-repeat: no-repeat;
-  background-position: right 1vw bottom 19vh;
-  background-color: hsl(145deg, 58%, 55%);
-}
-
-.p-card {
-  background: url(../images/icon-social.svg);
-  background-repeat: no-repeat;
-  background-position: right 1vw bottom 19vh;
-  background-color: hsl(264deg, 64%, 52%);
-}
-
-.y-card {
-  background: url(../images/icon-self-care.svg);
-  background-repeat: no-repeat;
-  background-position: right 1vw bottom 19vh;
-  background-color: hsl(43deg, 84%, 65%);
+@keyframes pop {
+  0% {
+    transform: scale(0) translateY(-350%);
+  }
+  50% {
+    transform: scale(1) translateY(0%);
+  }
 }
 
 .card {
@@ -186,11 +153,60 @@ body {
   color: hsl(0deg, 0%, 100%);
 }
 
-@media (max-width: 1110px) {
+.o-card {
+  background: url(../images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(15deg, 100%, 70%);
+}
+
+.b-card {
+  background: url(../images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(195deg, 74%, 62%);
+}
+
+.r-card {
+  background: url(../images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(348deg, 100%, 68%);
+}
+
+.g-card {
+  background: url(../images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(145deg, 58%, 55%);
+}
+
+.p-card {
+  background: url(../images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(264deg, 64%, 52%);
+}
+
+.y-card {
+  background: url(../images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: right 1vw bottom 19vh;
+  background-color: hsl(43deg, 84%, 65%);
+}
+
+@media (max-width: 1000px) {
   .grid-section {
     grid-template-columns: 1fr;
   }
+  .profile {
+    width: clamp(250px, 500px, 90vw);
+  }
   .profile .profile-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     height: 200px;
     padding-block: 20px;
   }
