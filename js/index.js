@@ -11,6 +11,7 @@ const title = document.querySelectorAll(".title");
 const actualTime = document.querySelectorAll(".actual-time");
 const previousTime = document.querySelectorAll(".previous-time");
 
+// function
 async function api() {
   const response = await fetch(url);
   const data = await response.json();
